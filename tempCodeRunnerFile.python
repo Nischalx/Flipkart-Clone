@@ -1,0 +1,30 @@
+# Import the requests library to make API calls
+import requests
+
+# Define the base URL for the RailYatri API
+base_url = "https://api.railyatri.in/v2/platform_locator/"
+
+# Define a function to get the platform number for a given train number and station code
+def get_platform(train_number, station_code):
+    # Construct the full URL by appending the train number and station code
+    full_url = base_url + train_number + "/" + station_code
+    
+    # Make a GET request to the API and get the response as a JSON object
+    response = requests.get(full_url).json()
+    
+    # Check if the response has a status key with value "OK"
+    if response.get("status") == "OK":
+        # Get the platform number from the response
+        platform = response.get("platform")
+        
+        # Return the platform number as a string
+        return str(platform)
+    
+    # If the response does not have a status key with value "OK", return an error message
+    else:
+        return "Sorry, could not find the platform number for this train and station."
+
+# Test the function with some examples
+print(get_platform("12002", "NDLS")) # Should return "3"
+print(get_platform("12616", "MAS")) # Should return "5"
+print(get_platform("12345", "XYZ")) # Should return "Sorry, could not find the platform number for this train and station."

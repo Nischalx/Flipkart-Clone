@@ -1,0 +1,128 @@
+.nav-main {
+  width: 200px;
+  height: auto;
+}
+.header {
+  background-color: #fff;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo {
+  background-image: url("/images/flipkart-095e08.svg");
+  height: 22px;
+  width: 160px;
+}
+.logo-desc1 {
+  color: #9e9e9e;
+  font-size: 14px;
+  margin-left: 70px;
+}
+.logo-desc2 {
+  color: #ffc200;
+  font-size: 14px;
+}
+.nav-search {
+  background-color: #cee5f6;
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+  width: 50%;
+  border-radius: 4px;
+}
+.search-icon {
+  height: 20px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.search-input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: #cee5f6;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  font-family: "Roboto";
+}
+.optns {
+  display: flex;
+  justify-content: space-evenly;
+}
+.seller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+.Cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+.menu-icon {
+  margin-right: 8px;
+}
+.f-opt {
+  font-size: 18px;
+}
+.down-icon {
+  margin: auto;
+}
+.hero {
+  background-color: silver;
+  height: 150px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  width: 97%;
+  height: 134.6px;
+  background-color: #ffffff;
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.top-offers {
+  margin-top: 16.6px;
+  height: 64px;
+  width: 64px;
+}
+.options {
+  display: inline-block;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-img {
+  width: 97%;
+}
+.banr-img {
+  width: 100%;
+}
+.banr-discount {
+  width: 97%;
+}
+.products {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.prdct {
+}
